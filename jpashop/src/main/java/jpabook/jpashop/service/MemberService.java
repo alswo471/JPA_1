@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true) // readOnly = true => 읽기 전용에만 (읽기가 아닌 쓰기에 넣으면 변경이 안되서 넣으면 안됌)
-public class MemberSerivce {
+public class MemberService {
 
     private final MemberRepository memberRepository;
 
