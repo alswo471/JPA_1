@@ -3,6 +3,7 @@ package jpabook.jpashop.domain;
 import lombok.Getter;
 
 import javax.persistence.Embeddable;
+import javax.persistence.EntityManager;
 
 @Embeddable
 @Getter
@@ -21,4 +22,6 @@ public class Address {
     protected Address() {
 
     }
+
+
 }

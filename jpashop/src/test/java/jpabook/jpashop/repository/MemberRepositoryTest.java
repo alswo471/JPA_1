@@ -22,6 +22,22 @@ public class MemberRepositoryTest {
     @Autowired
     MemberRepository memberRepository;
 
+
+    @Test
+    @Rollback(false)
+    public void 조회() throws Exception {
+        //given
+        Member member = new Member();
+        member.setName("kim");
+
+        //when
+        Long saveId = memberService.join(member);
+
+        //then
+        Member findMember = memberRepository.findOne(1L);
+        member.setName("kim2");
+    }
+
     @Test
     public void 회원가입() throws Exception {
         //given
@@ -33,6 +49,7 @@ public class MemberRepositoryTest {
 
         //then
         assertEquals(member, memberRepository.findOne(saveId));
+
     }
 
     @Test(expected = IllegalStateException.class)
