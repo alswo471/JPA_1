@@ -29,5 +29,10 @@ public class OrderItem {
 
     private int orderPrice;
     private int count;
-    private int pricecount
+    private int pricecount;
+
+    //==비지니스 로직==//
+    public void cancel() {
+        getItem().addStock(count);
+    }
 }
