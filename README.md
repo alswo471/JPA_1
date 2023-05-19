@@ -180,11 +180,7 @@ JPA ORM 에서는 대부분 도메인 모델 패턴 사용하고 mybtis 는 트�
 
 주문 서비스의 주문, 주문취소 메서드에 보면 비즈니스 로직이 대부분 엔티티에 있다. 서비스
 계층은 단순히 엔티티에 필요한 요청을 위임하는 역할을 한다. 이처럼 엔티티가 비즈니스 로직을 가지고
-객체 지향의 특성을 적극 활용하는 것을 도메인 모델 패턴이라고 한다. 
-
-<br>
-
-<img width="500" alt="image" src="https://github.com/alswo471/JPA_1/blob/master/image/%EB%8F%84%EB%A9%94%EC%9D%B8%20%ED%8C%A8%ED%84%B4.png?raw=true">
+객체 지향의 특성을 적극 활용하는 것을 [도메인 모델 패턴](https://martinfowler.com/eaaCatalog/domainModel.html)이라고 한다.
 
 <br>
 
@@ -197,8 +193,6 @@ JPA ORM 에서는 대부분 도메인 모델 패턴 사용하고 mybtis 는 트�
 
 
 ## 스프링 부트 라이브러리
-
-<br>
 
 **목록**
 
