@@ -140,17 +140,26 @@
 <br>
 
 **@Repository :**
+
 - 컴포넌트 대상이 되서 스프링 빈에 자동등록된다.
 
 <br>
 
 **@Transactional(readOnly = true) :**
+
 - readOnly = true => 읽기 전용에만 (읽기가 아닌 쓰기에 넣으면 변경이 안되서 넣으면 안됌)
 
 <br>
 
 **@RequiredArgsConstructor**
+
 - 파이널 있는 필드만 가지고 생성자를 만들어준다.
+
+## 상품 도메인 개발
+
+[레포지토리](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/repository/ItemRepository.java)
+
+[서비스](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/service/ItemService.java)
 
 ## 스프링 부트 라이브러리
 
@@ -165,7 +174,7 @@
 - spring-boot-starter-data-jpa
 - spring-boot-starter-aop
 - spring-boot-starter-jdbc
-- HikariCP 커넥션 풀 
+- HikariCP 커넥션 풀
 - hibernate + JPA: 하이버네이트 + JPA
 - spring-data-jpa: 스프링 데이터 JPA
 - spring-boot-starter(공통): 스프링 부트 + 스프링 코어 + 로깅
