@@ -161,6 +161,39 @@
 
 [서비스](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/service/ItemService.java)
 
+## 주문 도메인 개발
+
+[레포지토리](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/repository/OrderRepository.java)
+
+[서비스](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/service/OrderService.java)
+
+<br>
+
+**참고**
+
+JPA ORM 에서는 대부분 도메인 모델 패턴 사용하고 mybtis 는 트랜잭션 스크립트 패턴을 주로 사용
+"이 패턴을 사용해야한다." 라고 정답은 없다. 한 프로젝트를 진행할 때 본인에 문맥에 맞는 패턴을 사용하면 된다.
+
+<br>
+
+**도메인 모델 패턴이란?**
+
+주문 서비스의 주문, 주문취소 메서드에 보면 비즈니스 로직이 대부분 엔티티에 있다. 서비스
+계층은 단순히 엔티티에 필요한 요청을 위임하는 역할을 한다. 이처럼 엔티티가 비즈니스 로직을 가지고
+객체 지향의 특성을 적극 활용하는 것을 도메인 모델 패턴이라고 한다. 
+
+
+
+<br>
+
+**트랜잭션 스크립트 패턴이란?**
+
+엔티티에는 비즈니스 로직이 거의 없고 서비스 계층에서
+대부분의 비즈니스 로직을 처리하는 것을 [트랜잭션 스크립트 패턴](https://martinfowler.com/eaaCatalog/transactionScript.html)이라고 한다.
+
+
+
+
 ## 스프링 부트 라이브러리
 
 <br>
