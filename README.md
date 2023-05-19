@@ -133,9 +133,9 @@
 
 ## 회원 레포지토리 개발
 
-[레포지토리](https://github.com/alswo471/JPA_1/tree/master/jpashop/src/main/java/jpabook/jpashop/repository)
+[레포지토리](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/repository/MemberRepository.java)
 
-[서비스](https://github.com/alswo471/JPA_1/tree/master/jpashop/src/main/java/jpabook/jpashop/service)
+[서비스](https://github.com/alswo471/JPA_1/blob/master/jpashop/src/main/java/jpabook/jpashop/service/MemberService.java)
 
 <br>
 
